@@ -1,0 +1,57 @@
+<div *ngIf="homeData " class="pb-3" fxLayout.xs="column" fxLayout="row wrap" fxLayoutAlign="space-around center"
+  fxLayoutGap="25px">
+  <mat-card class="example-card card-1" fxFlex="calc(25%-25px)" fxFlex.sm="calc(50%-25px)">
+    <mat-card-header class="mx-auto">
+      <div mat-card-avatar class="example-header1-image"></div>
+      <mat-card-title style="font-size: 20px; display: flex">All User </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <p class="para">{{ homeData.total_count }}</p>
+      <!-- <p class="para">120</p> -->
+    </mat-card-content>
+  </mat-card>
+  <mat-card class="example-card card-1" fxFlex="calc(25%-25px)" fxFlex.sm="calc(50%-25px)">
+    <mat-card-header class="mx-auto">
+      <div mat-card-avatar class="example-header2-image"></div>
+      <mat-card-title style="font-size: 20px; display: flex"> Only Users</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <!-- <p class="para">{{ data["activeBusiness"] }}</p> -->
+      <p class="para">{{ homeData.users }}</p>
+      <!-- <p class="para">52</p> -->
+    </mat-card-content>
+  </mat-card>
+  <mat-card class="example-card card-1" fxFlex="calc(25%-25px)" fxFlex.sm="calc(50%-25px)">
+    <mat-card-header class="mx-auto">
+      <div mat-card-avatar class="example-header5-image"></div>
+      <mat-card-title style="font-size: 20px">Artists</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <!-- <p class="para">{{ data["totalBusiness"] }}</p> -->
+      <p class="para">{{ homeData.artists }}</p>
+
+      <!-- <p class="para">172</p> -->
+    </mat-card-content>
+  </mat-card>
+  <mat-card class="example-card card-1" fxFlex="calc(25%-25px)" fxFlex.sm="calc(50%-25px)">
+    <mat-card-header class="mx-auto">
+      <div mat-card-avatar class="example-header4-image"></div>
+      <mat-card-title style="font-size: 20px">Organizers</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <!-- <p class="para">{{ data["totalBusiness"] }}</p> -->
+      <p class="para">{{ homeData.organizers }}</p>
+
+      <!-- <p class="para">172</p> -->
+    </mat-card-content>
+  </mat-card>
+</div>
+<!-- <ng-template #loadingSpinner>
+  <mat-spinner class="loading-spinner mx-auto" diameter="70">Loading!!!!</mat-spinner>
+</ng-template> -->
+<!-- <div class="card my-2 me-4">
+  <h2 class="p-3" style="text-align: left; padding-left: 10px">Joinings</h2>
+  <div class="card-body chartBox mx-auto">
+    <canvas id="myChart"></canvas>
+  </div>
+</div> -->
