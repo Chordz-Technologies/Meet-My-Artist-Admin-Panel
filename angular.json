@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Ekari100Ton": {
+    "meet-my-artist-admin-panel": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
